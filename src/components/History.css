@@ -1,0 +1,99 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  background: #1a1a1e;
+  border: 1px solid #2a2a30;
+  color: #e2e2e2;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #6c63ff;
+}
+
+.search-input::placeholder {
+  color: #555;
+}
+
+.clear-btn {
+  background: #2a1a1a;
+  border: 1px solid #5a2a2a;
+  color: #ff9999;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.clear-btn:hover {
+  background: #5a2a2a;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-time {
+  font-size: 11px;
+  color: #555;
+  padding-left: 4px;
+}
+
+.no-results {
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.history-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 48px;
+  opacity: 0.3;
+}
+
+.empty-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #888;
+}
+
+.empty-sub {
+  font-size: 13px;
+  color: #555;
+  max-width: 220px;
+}

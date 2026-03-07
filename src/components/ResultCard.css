@@ -1,0 +1,95 @@
+.result-card {
+  background: #1a1a1e;
+  border: 1px solid #2a2a30;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #4caf7d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.open-link {
+  font-size: 12px;
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.open-link:hover {
+  text-decoration: underline;
+}
+
+.result-text {
+  font-size: 14px;
+  color: #e2e2e2;
+  background: #0f0f10;
+  border: 1px solid #2a2a30;
+  border-radius: 8px;
+  padding: 10px 12px;
+  word-break: break-all;
+  max-height: 100px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+.result-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.copy-btn {
+  flex: 1;
+  background: #6c63ff;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-btn:hover {
+  background: #574fd6;
+}
+
+.copy-btn.copied {
+  background: #2e7d52;
+}
+
+.scan-again-btn {
+  background: #2a2a30;
+  border: none;
+  color: #aaa;
+  font-size: 13px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.scan-again-btn:hover {
+  background: #38383f;
+  color: #fff;
+}
