@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect, useCallback } from 'react'
-import { BrowserMultiFormatReader, NotFoundException } from '@zxing/library'
-import { ResultCard } from './ResultCard'
-import './Scanner.css'
+import { useState, useRef, useEffect } from 'react'
+import { BrowserMultiFormatReader } from '@zxing/library'
+import { ResultCard } from '../ResultCard'
+import './styles.css'
 
 export function Scanner({ onResult }) {
 	const [mode, setMode] = useState('screen')
@@ -9,7 +9,6 @@ export function Scanner({ onResult }) {
 	const [error, setError] = useState(null)
 	const [previewSrc, setPreviewSrc] = useState(null)
 
-	const fileInputRef = useRef(null)
 	const readerRef = useRef(null)
 
 	useEffect(() => {
@@ -45,13 +44,6 @@ export function Scanner({ onResult }) {
 		}
 	}
 
-	const handleReset = () => {
-		setResult(null)
-		setError(null)
-		setPreviewSrc(null)
-		if (fileInputRef.current) fileInputRef.current.value = ''
-	}
-
 	const handleScreenCapture = () => {
 		if (typeof chrome !== 'undefined' && chrome.runtime) {
 			setMode('screen')
@@ -66,15 +58,6 @@ export function Scanner({ onResult }) {
 
 	return (
 		<div className="scanner">
-			<div className="mode-toggle">
-				<button
-					className={`mode-btn ${mode === 'screen' ? 'active' : ''}`}
-					onClick={handleScreenCapture}
-				>
-					<span>🖼</span> Screen
-				</button>
-			</div>
-
 			{!previewSrc && !result && !error && (
 				<div className="screen-capture-section">
 					<div className="screen-capture-hint">

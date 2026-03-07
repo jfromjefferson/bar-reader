@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './ResultCard.css'
+import './styles.css'
 
 export function ResultCard({ text, onReset }) {
   const [copied, setCopied] = useState(false)

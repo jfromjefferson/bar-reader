@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Bar Reader - Barcode & QR Scanner",
   "version": "1.0.0",
-  "description": "Scan barcodes and QR codes from images or your camera and copy the result to clipboard.",
+  "description": "Instantly scan barcodes and QR codes by selecting any area on your screen. Results are copied to clipboard and saved to history.",
   "action": {
     "default_popup": "index.html",
     "default_icon": {

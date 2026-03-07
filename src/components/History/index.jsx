@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { ResultCard } from './ResultCard'
-import './History.css'
+import { ResultCard } from '../ResultCard'
+import './styles.css'
 
 export function History({ results, onClear }) {
   const [search, setSearch] = useState('')
