@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Bar Reader - Barcode & QR Scanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Instantly scan barcodes and QR codes by selecting any area on your screen. Results are copied to clipboard and saved to history.",
   "action": {
     "default_popup": "index.html",
@@ -22,5 +22,5 @@
     "service_worker": "src/background.js",
     "type": "module"
   },
-  "permissions": ["clipboardWrite", "tabs", "activeTab", "scripting", "storage"]
+  "permissions": ["clipboardWrite", "activeTab", "scripting", "storage"]
 }
