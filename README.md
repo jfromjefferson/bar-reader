@@ -2,6 +2,8 @@
 
 A Chrome extension that lets you instantly scan barcodes and QR codes by selecting any area on your screen. Built with React and the ZXing library.
 
+**[Install on Chrome Web Store](https://chromewebstore.google.com/detail/bfokhmfapemhigigjnlgdngfjdallefa)**
+
 ## Features
 
 - Select any area on your screen to scan for barcodes or QR codes
